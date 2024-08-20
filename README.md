@@ -46,6 +46,8 @@ Para esto vamos a ingresar a nuestro localhost, utilizando los puertos que halla
 ## 6. Ejecutamos nuestra aplicación principal
 
 En este paso debemos asegurarnos que en nuestro método que va a utilizar los microservicios, la ruta en nuestro código debe ser exacta, esto para evitar alguna excepción a la hora de ejecutar.
+![image](https://github.com/user-attachments/assets/190f76f4-aec0-4700-8ab9-99b8717da6df)
+En la imagen podemos observar que las rutas van con el puerto seleccionado para cada microservicio.
 Para ejecutar nuestra aplicación, debemos construir la imagen de Docker
 
     docker build -t helloworld .
@@ -55,3 +57,6 @@ Y lanzar nuestra aplicación con Maven o Docker. Para el ejemplo, vamos a hacerl
    
 ## 7. Ingresar a la aplicación principal
 Por último, para comprobar el funcionamiento, ingresamos al localhost nuevamente, utilizando el puerto que hallamos seleccionado con la ruta de nuestro programa.
+
+## Conclusión
+Gracias a esta pequeña aplicación podemos darnos cuenta de como los microservicios pueden ser usados en ambientes externos a nuestra aplicación, lo cual permite dividir nuestra aplicación principal en diferentes microservicios que son consumidos de manera independiente.
